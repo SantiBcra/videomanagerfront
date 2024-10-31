@@ -4,7 +4,7 @@
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #000000;
+    
     border-radius: 5px;
     background-color: #2e2c2c;
   }
@@ -19,7 +19,7 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #e5dbdb;
+    background-color: white;
     width: 100%;
     box-sizing: border-box;
   }
