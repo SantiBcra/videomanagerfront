@@ -28,13 +28,6 @@ function App() {
   );
 }
 
-function AppWrapper() {
-  return (
-    <Router>
-      <App />
-    </Router>
-  );
-}
 
 
-export default AppWrapper;
+export default App
