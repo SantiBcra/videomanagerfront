@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import './js/new'
 import './js/share_manager'
 import './css/perfect-scrollbar.css';
 import './css/mvp.css';
-
 
 const VideoPlayer = () => {
   const { id } = useParams();
@@ -56,9 +56,11 @@ const VideoPlayer = () => {
             
           ],
         };
-
+if(videoPath){
         // Inicia el reproductor con los settings configurados
         new mvp(document.getElementById('wrapper').children[0], settings);
+
+}
       } catch (error) {
         console.error('Error al cargar el video:', error);
       }
@@ -95,3 +97,4 @@ const VideoPlayer = () => {
 }
 
 export default VideoPlayer;
+
