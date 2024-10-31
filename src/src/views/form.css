@@ -1,0 +1,89 @@
+.video-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #2e2c2c;
+  }
+  
+  .video-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .video-form input[type="text"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e5dbdb;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  .custom-checkbox {
+    position: relative;
+    padding-left: 30px; /* Espacio para el checkbox personalizado */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+  }
+
+  .custom-checkbox:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ancho del checkbox */
+    height: 20px; /* Alto del checkbox */
+    border: 2px solid #007bff; /* Color del borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    background: white; /* Fondo blanco */
+    transition: background 0.3s, border-color 0.3s; /* Transiciones suaves */
+  }
+
+  .checkbox-group input[type="checkbox"]:checked + .custom-checkbox:before {
+    background: #007bff; /* Fondo del checkbox cuando está seleccionado */
+    border-color: #007bff; /* Color del borde cuando está seleccionado */
+  }
+
+  .checkbox-group input[type="checkbox"]:checked + .custom-checkbox:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10%;
+    width: 5px;
+    height: 10px;
+    border: solid white; /* Color de la marca de verificación */
+    border-width: 0 2px 2px 0; /* Formato de la marca de verificación */
+    transform: rotate(45deg); /* Rotación para la marca de verificación */
+  }
+
+  
+  
+  .video-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .video-form button:hover {
+    background-color: #45a049;
+  }
+  
