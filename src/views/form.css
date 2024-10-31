@@ -1,89 +1,105 @@
 .video-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    
-    border-radius: 5px;
-    background-color: #2e2c2c;
-  }
-  
-  .video-form label {
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  .video-form input[type="text"] {
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: darkgray;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .checkbox-group {
-    margin-bottom: 15px;
-  }
-  
-  .checkbox-group label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin: 5px 0;
-  }
-  .custom-checkbox {
-    position: relative;
-    padding-left: 30px; /* Espacio para el checkbox personalizado */
-    cursor: pointer;
-    font-size: 16px; /* Tamaño de fuente */
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #2e2c2c;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .custom-checkbox:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Ancho del checkbox */
-    height: 20px; /* Alto del checkbox */
-    border: 2px solid #007bff; /* Color del borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    background: white; /* Fondo blanco */
-    transition: background 0.3s, border-color 0.3s; /* Transiciones suaves */
-  }
+.video-form label {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 
-  .checkbox-group input[type="checkbox"]:checked + .custom-checkbox:before {
-    background: #007bff; /* Fondo del checkbox cuando está seleccionado */
-    border-color: #007bff; /* Color del borde cuando está seleccionado */
-  }
+.video-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #383636;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  .checkbox-group input[type="checkbox"]:checked + .custom-checkbox:after {
-    content: '';
-    position: absolute;
-    left: 5px;
-    top: 10%;
-    width: 5px;
-    height: 10px;
-    border: solid white; /* Color de la marca de verificación */
-    border-width: 0 2px 2px 0; /* Formato de la marca de verificación */
-    transform: rotate(45deg); /* Rotación para la marca de verificación */
-  }
+.video-form input[type="text"]:focus {
+  background-color: #454242;
+  outline: none;
+}
 
-  
-  
-  .video-form button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .video-form button:hover {
-    background-color: #45a049;
-  }
-  
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: #383636;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg) translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.video-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.video-form button:hover {
+  background-color: #0056b3;
+}
