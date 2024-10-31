@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import './js/new'
+import './js/share_manager'
 import './css/perfect-scrollbar.css';
 import './css/mvp.css';
 
