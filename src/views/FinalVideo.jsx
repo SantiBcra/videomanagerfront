@@ -56,11 +56,11 @@ const VideoPlayer = () => {
             
           ],
         };
-if(videoPath){
+
         // Inicia el reproductor con los settings configurados
         new mvp(document.getElementById('wrapper').children[0], settings);
 
-}
+
       } catch (error) {
         console.error('Error al cargar el video:', error);
       }
@@ -69,7 +69,7 @@ if(videoPath){
     fetchVideoData();
   }, [id]);
 
-  if(videoPath){
+
     
     return (
     <div id="wrapper">
@@ -94,7 +94,6 @@ if(videoPath){
     </div>
   );
 };
-}
+
 
 export default VideoPlayer;
-
