@@ -22,7 +22,7 @@ function App() {
         <Route path="/add-video" element={<FormVideo />} />
         <Route path="/view" element={<Dashboard />} />
         <Route path="/video/:id" element={<VideoPlayer />} />
-        <Route exact path="/video" element={<VideoNull />} />
+        <Route path="/video" element={<VideoNull />} />
       </Routes>
     </div>
   );
