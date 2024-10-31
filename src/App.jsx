@@ -19,10 +19,10 @@ function App() {
 
       <Routes>
         <Route path="/video/:id" element={<VideoPlayer />} />
+        <Route path="/video" element={<VideoNull />} />
         <Route path="/" element={<Home />} />
         <Route path="/add-video" element={<FormVideo />} />
         <Route path="/view" element={<Dashboard />} />
-        <Route path="/video" element={<VideoNull />} />
       </Routes>
     </div>
   );

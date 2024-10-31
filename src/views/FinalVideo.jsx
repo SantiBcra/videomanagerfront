@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+
 import './css/perfect-scrollbar.css';
 import './css/mvp.css';
 
@@ -11,10 +11,19 @@ const VideoPlayer = () => {
   useEffect(() => {
     const fetchVideoData = async () => {
       try {
-        const response = await axios.get(`https://lightgray-lobster-895274.hostingersite.com/public/videos/${id}`);
-        const data = response.data;
-        const videoData=data.message;
-        setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
+        const response = await fetch(`https://lightgray-lobster-895274.hostingersite.com/public/videos/${id}`);
+
+        if (!response.ok) {
+          throw new Error("Error al cargar los datos");
+        }
+        
+        const data = await response.json(); // Aquí debes usar .json() para obtener el objeto completo
+
+        const videoData = data.message; // Accedemos correctamente a message
+
+        console.log(data.message.drivelink)
+
+        const ready = await setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
 
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
@@ -25,10 +34,10 @@ const VideoPlayer = () => {
           openFsOnPlay: true,
           mediaEndAction: 'rewind',
           playlistPosition: 'vb',
-          combinePlayerRatio: true,
-          playlistScrollType: 'perfect-scrollbar',
+          // combinePlayerRatio: true,
+          // playlistScrollType: 'perfect-scrollbar',
           playlistOpened: false,
-          showControlsBeforeStart: false,
+          showControlsBeforeStart: true,
           verticalBottomSepearator: 768,
           playlistBottomHeight: 300,
           instanceName: "player1",
@@ -56,7 +65,9 @@ const VideoPlayer = () => {
     fetchVideoData();
   }, [id]);
 
-  return (
+  if(videoPath){
+    
+    return (
     <div id="wrapper">
       <div className="playlist-video">
         <div 
@@ -79,5 +90,6 @@ const VideoPlayer = () => {
     </div>
   );
 };
+}
 
 export default VideoPlayer;
