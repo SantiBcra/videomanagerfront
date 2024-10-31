@@ -27,7 +27,14 @@ function App() {
     </div>
   );
 }
+function AppWrapper() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
 
 
+export default AppWrapper;
 
-export default App
