@@ -62,7 +62,7 @@ const FormVideo = () => {
         // Muestra la alerta de éxito
         Swal.fire({
           title: '¡Éxito!',
-          text: `Agregado correctamente. Mediante este LINK podra acceder a su video: https://lightgray-lobster-895274.hostingersite.com/video/${result.message.id}`,
+          text: `Agregado correctamente. Mediante este LINK podra acceder a su video: https://lightgray-lobster-895274.hostingersite.com/video/${result.message}`,
           icon: 'success',
           confirmButtonText: 'Aceptar'
         });
