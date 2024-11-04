@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import sub from "./media/subtitles/sintel-en.vtt";
 
 import './js/new'
 import './js/share_manager'
@@ -86,8 +87,8 @@ const VideoPlayer = () => {
           data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
         >
           <div className="mvp-subtitles">
-            <div data-label="English" data-src="/subtitles/sintel-en.vtt" data-default></div>
-            <div data-label="Spanish" data-src="/subtitles/sintel-es.vtt"></div>
+            <div data-label="English" data-src={sub} data-default></div>
+{/*             <div data-label="Spanish" data-src="/subtitles/sintel-es.vtt"></div> */}
           </div>
         </div>
       </div>
