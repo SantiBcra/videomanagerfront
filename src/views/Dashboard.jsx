@@ -55,7 +55,11 @@ function Dashboard() {
             <tbody>
               {videos.map((video) => (
                 <tr key={video.id}>
-                  <td>{video.id}</td>
+                  <td>
+                  <a href={`https://videomanagerfront-3nx6.vercel.app/video/${video.id}`} target="_blank" rel="noopener noreferrer">
+                    {video.id}
+                  </a>
+                </td>
                   <td>{video.instagram}</td>
                   <td>{video.verisart}</td>
                   <td>{video.drivelink}</td>
