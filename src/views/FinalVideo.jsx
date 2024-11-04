@@ -30,7 +30,7 @@ const VideoPlayer = () => {
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
-          useMobileNativePlayer: true,
+          useMobileNativePlayer: false,
           mobileSeekbarMinWidth: 500,
           embedSrc: "0",
           openFsOnPlay: true,
@@ -86,8 +86,8 @@ const VideoPlayer = () => {
           data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
         >
           <div className="mvp-subtitles">
-            <div data-label="English" data-src="media/subtitles/sintel-en.vtt" data-default></div>
-            <div data-label="Spanish" data-src="media/subtitles/sintel-es.vtt"></div>
+            <div data-label="English" data-src="/subtitles/sintel-en.vtt" data-default></div>
+            <div data-label="Spanish" data-src="/subtitles/sintel-es.vtt"></div>
           </div>
         </div>
       </div>
