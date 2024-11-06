@@ -5,7 +5,6 @@ function Dashboard() {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Función para obtener los datos de video
   const fetchVideos = async () => {
     try {
       const response = await fetch("https://lightgray-lobster-895274.hostingersite.com/public/all");
@@ -27,7 +26,6 @@ function Dashboard() {
     }
   };
 
-  // Llamar a la API cuando el componente se monta
   useEffect(() => {
     fetchVideos();
   }, []);
@@ -36,44 +34,33 @@ function Dashboard() {
     <div className="dashboard">
       <h1>Dashboard</h1>
       
-      {/* Mensaje de carga */}
       {loading && <p>Cargando videos...</p>}
       
-      {/* Mostrar videos en tabla */}
       <div className="video-table">
         {videos.length > 0 ? (
-          <table>
-            <thead>
-              <tr>
-                <th className="red">ID</th>
-                <th>Instagram</th>
-                <th>Verisart</th>
-                <th>Google Drive Link</th>
-                <th>Subtítulos</th>
-              </tr>
-            </thead>
-            <tbody>
-              {videos.map((video) => (
-                <tr key={video.id}>
-                  <td data-label="ID">
-                    <a href={`https://videomanagerfront-3nx6.vercel.app/video/${video.id}`} target="_blank" rel="noopener noreferrer">
-                      {video.id}
-                    </a>
-                  </td>
-                  <td data-label="Instagram">{video.instagram}</td>
-                  <td data-label="Verisart">{video.verisart}</td>
-                  <td data-label="Google Drive Link">{video.drivelink}</td>
-                  <td data-label="Subtítulos">
-                    <ul>
-                      {video.languages?.english && <li>English</li>}
-                      {video.languages?.spanish && <li>Spanish</li>}
-                      {video.languages?.chinese && <li>Chinese</li>}
-                    </ul>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="card-container">
+            {videos.map((video) => (
+              <div className="video-card" key={video.id}>
+                <div className="video-card-header">
+                  <h3>ID: {video.id}</h3>
+                  <a href={`https://videomanagerfront-3nx6.vercel.app/video/${video.id}`} target="_blank" rel="noopener noreferrer">
+                    Ver Video
+                  </a>
+                </div>
+                <div className="video-card-content">
+                  <p><strong>Instagram:</strong> {video.instagram}</p>
+                  <p><strong>Verisart:</strong> {video.verisart}</p>
+                  <p><strong>Google Drive Link:</strong> <a href={video.drivelink} target="_blank" rel="noopener noreferrer">Abrir</a></p>
+                  <p><strong>Subtítulos:</strong></p>
+                  <ul className="languages">
+                    {video.languages?.english && <li>English</li>}
+                    {video.languages?.spanish && <li>Spanish</li>}
+                    {video.languages?.chinese && <li>Chinese</li>}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
         ) : (
           !loading && <p>No se encontraron videos.</p>
         )}
@@ -83,4 +70,5 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
 
