@@ -37,7 +37,7 @@ const VideoPlayer = () => {
           openFsOnPlay: true,
           mediaEndAction: 'rewind',
           playlistPosition: 'vb',
-          // combinePlayerRatio: true,
+          combinePlayerRatio: true,
           // playlistScrollType: 'perfect-scrollbar',
           playlistOpened: false,
           showControlsBeforeStart: true,
