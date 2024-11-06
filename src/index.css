@@ -215,3 +215,14 @@ nav ul li a:hover {
   color: #333;
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+}
