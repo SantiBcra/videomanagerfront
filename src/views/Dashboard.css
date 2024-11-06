@@ -38,3 +38,51 @@
 .video-table th.red{
   background-color: rgba(203, 60, 60, 0.856);
 }
+
+@media (max-width: 768px) {
+  .video-table table {
+    display: block;
+    width: 100%;
+  }
+
+  .video-table thead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .video-table th, .video-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .video-table th {
+    padding: 10px 0;
+  }
+
+  .video-table td {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .video-table td:before {
+    content: attr(data-label) ": ";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  /* Hide data-label attribute on larger screens */
+  .video-table td[data-label] {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .video-table td:before {
+      font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+  }
+}
