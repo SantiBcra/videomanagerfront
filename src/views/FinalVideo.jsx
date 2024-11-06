@@ -37,7 +37,7 @@ const VideoPlayer = () => {
           openFsOnPlay: false,
           mediaEndAction: 'rewind',
           playlistPosition: 'vb',
-          combinePlayerRatio: true,
+          // combinePlayerRatio: true,
           // playlistScrollType: 'perfect-scrollbar',
           playlistOpened: false,
           showControlsBeforeStart: false,
@@ -46,12 +46,12 @@ const VideoPlayer = () => {
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
           playerRatio: 0.7,
-          aspectRatio: 0.5, // Relación 9:16
+          aspectRatio: 0.7, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
           autoPlay: true,
           randomPlay: false,
-          showControlsBeforeStart: true,
+          showControlsBeforeStart: false,
           elementsVisibilityArr: [
             { width: 6000, elements: ['play', 'fullscreen', 'settings', 'cc', 'volume'] }
             
