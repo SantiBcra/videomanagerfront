@@ -1,106 +1,85 @@
 /* Estilos generales */
 .dashboard {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
-.dashboard h1 {
-  text-align: center;
-  color: #333;
+h1 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-.video-table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Tabla para pantallas grandes */
+.large-screen {
+  display: block;
 }
 
+.small-screen {
+  display: none;
+}
+
+/* Estilos de la tabla */
+.video-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.video-table th,
+.video-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.video-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Estilos de las tarjetas */
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  justify-content: center;
 }
 
-/* Estilos para las tarjetas */
 .video-card {
-  width: 100%;
-  max-width: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.video-card:hover {
-  transform: scale(1.03);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .video-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3ea252b0;
-  padding: 15px;
-  color: #fff;
-  font-weight: bold;
 }
 
-.video-card-header a {
-  color: #fff;
-  background-color: #3498db;
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-.video-card-header a:hover {
-  background-color: #2980b9;
-}
-
-.video-card-content {
-  padding: 15px;
-  color: #333;
+.video-card-header h3 {
+  margin: 0;
 }
 
 .video-card-content p {
-  margin: 10px 0;
-  font-size: 1em;
-}
-
-.video-card-content a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.video-card-content a:hover {
-  text-decoration: underline;
+  margin: 5px 0;
 }
 
 .languages {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  display: flex;
-  gap: 10px;
+  margin: 0;
 }
 
 .languages li {
-  background-color: #e0e0e0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9em;
+  display: inline;
+  margin-right: 10px;
 }
 
-/* Responsive */
+/* Responsivo: Mostrar tarjetas en pantallas pequeñas */
 @media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: block;
   }
 }
