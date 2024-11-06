@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Dashboard.css"; // Asegúrate de agregar estilos para el Dashboard si es necesario
+import "./Dashboard.css";
 
 function Dashboard() {
   const [videos, setVideos] = useState([]);
@@ -55,15 +55,15 @@ function Dashboard() {
             <tbody>
               {videos.map((video) => (
                 <tr key={video.id}>
-                  <td>
-                  <a href={`https://videomanagerfront-3nx6.vercel.app/video/${video.id}`} target="_blank" rel="noopener noreferrer">
-                    {video.id}
-                  </a>
-                </td>
-                  <td>{video.instagram}</td>
-                  <td>{video.verisart}</td>
-                  <td>{video.drivelink}</td>
-                  <td>
+                  <td data-label="ID">
+                    <a href={`https://videomanagerfront-3nx6.vercel.app/video/${video.id}`} target="_blank" rel="noopener noreferrer">
+                      {video.id}
+                    </a>
+                  </td>
+                  <td data-label="Instagram">{video.instagram}</td>
+                  <td data-label="Verisart">{video.verisart}</td>
+                  <td data-label="Google Drive Link">{video.drivelink}</td>
+                  <td data-label="Subtítulos">
                     <ul>
                       {video.languages?.english && <li>English</li>}
                       {video.languages?.spanish && <li>Spanish</li>}
@@ -83,4 +83,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
