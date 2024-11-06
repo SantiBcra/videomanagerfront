@@ -45,8 +45,8 @@ const VideoPlayer = () => {
           // playlistBottomHeight: 300,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
-          playerRatio: 1.7778,
-          aspectRatio: 1, // Relación 9:16
+          playerRatio: 0,
+          aspectRatio: 1.7778, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
           autoPlay: true,
