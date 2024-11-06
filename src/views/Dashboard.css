@@ -4,41 +4,26 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.video-table table {
-  width: 100%;
-  border-collapse: collapse;
+.dashboard h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.video-table th, .video-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+.video-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.video-table th {
-  background-color: #3ea252b0;
-  font-weight: bold;
-}
-
-.video-table th.red {
-  background-color: rgba(203, 60, 60, 0.856);
-}
-
-.video-table td a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.video-table td ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.video-table td ul li {
-  display: inline;
-  margin-right: 10px;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* Estilos para las tarjetas */
@@ -119,55 +104,3 @@
     align-items: center;
   }
 }
-
-/* Estilos responsive */
-@media (max-width: 768px) {
-  .video-table table, 
-  .video-table thead, 
-  .video-table tbody, 
-  .video-table th, 
-  .video-table td, 
-  .video-table tr {
-    display: block;
-    width: 100%;
-  }
-
-  /* Ocultar cabeceras en móviles */
-  .video-table thead {
-    display: none;
-  }
-
-  /* Estilos para cada fila como tarjeta */
-  .video-table tr {
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Mostrar cada celda como un bloque completo */
-  .video-table td {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-  }
-
-  .video-table td:before {
-    content: attr(data-label);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    color: #333;
-  }
-
-  /* Elimina el borde inferior en la última celda */
-  .video-table td:last-child {
-    border-bottom: none;
-  }
-}
-
