@@ -3,105 +3,92 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 20px;
-  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.dashboard h1 {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 20px;
+.video-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.video-table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.video-table th, .video-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Estilos para las tarjetas */
-.video-card {
-  width: 85%;
-  max-width: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.video-card:hover {
-  transform: scale(1.03);
-}
-
-.video-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.video-table th {
   background-color: #3ea252b0;
-  padding: 15px;
-  color: #fff;
   font-weight: bold;
 }
 
-.video-card-header a {
-  color: #fff;
-  background-color: #3498db;
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9em;
+.video-table th.red {
+  background-color: rgba(203, 60, 60, 0.856);
 }
 
-.video-card-header a:hover {
-  background-color: #2980b9;
-}
-
-.video-card-content {
-  padding: 15px;
-  color: #333;
-}
-
-.video-card-content p {
-  margin: 10px 0;
-  font-size: 1em;
-}
-
-.video-card-content a {
+.video-table td a {
   color: #3498db;
   text-decoration: none;
 }
 
-.video-card-content a:hover {
-  text-decoration: underline;
-}
-
-.languages {
+.video-table td ul {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  gap: 10px;
 }
 
-.languages li {
-  background-color: #e0e0e0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9em;
+.video-table td ul li {
+  display: inline;
+  margin-right: 10px;
 }
 
-/* Responsive */
+/* Estilos responsive */
 @media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
+  .video-table table, 
+  .video-table thead, 
+  .video-table tbody, 
+  .video-table th, 
+  .video-table td, 
+  .video-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  /* Ocultar cabeceras en móviles */
+  .video-table thead {
+    display: none;
+  }
+
+  /* Estilos para cada fila como tarjeta */
+  .video-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mostrar cada celda como un bloque completo */
+  .video-table td {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  .video-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #333;
+  }
+
+  /* Elimina el borde inferior en la última celda */
+  .video-table td:last-child {
+    border-bottom: none;
   }
 }
 
