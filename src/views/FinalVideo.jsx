@@ -32,7 +32,7 @@ const VideoPlayer = () => {
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
           useMobileNativePlayer: false,
-          mobileSeekbarMinWidth: 500,
+          // mobileSeekbarMinWidth: 500,
           embedSrc: "0",
           openFsOnPlay: false,
           mediaEndAction: 'rewind',
@@ -41,15 +41,15 @@ const VideoPlayer = () => {
           // playlistScrollType: 'perfect-scrollbar',
           playlistOpened: false,
           showControlsBeforeStart: false,
-          verticalBottomSepearator: 768,
-          playlistBottomHeight: 300,
+          // verticalBottomSepearator: 768,
+          // playlistBottomHeight: 300,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
           playerRatio: 0.5,
           aspectRatio: 0.5, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
-          autoPlay: false,
+          autoPlay: true,
           randomPlay: false,
           showControlsBeforeStart: true,
           elementsVisibilityArr: [
