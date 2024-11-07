@@ -10,7 +10,7 @@ import './css/mvp.css';
 const VideoPlayer = () => {
   const { id } = useParams();
   const [videoPath, setVideoPath] = useState('');
- 
+   const [instagramState, setInstagramState] = useState('');
 
   useEffect(() => {
     const fetchVideoData = async () => {
@@ -24,7 +24,7 @@ const VideoPlayer = () => {
         const data = await response.json(); // Aquí debes usar .json() para obtener el objeto completo
 
         const videoData = data.message; // Accedemos correctamente a message
-
+        const ready = await setInstagramSate(videoData.instagram);
         const ready = await setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
 
         // Configura las opciones del reproductor usando videoData.videoPath
@@ -73,6 +73,12 @@ const VideoPlayer = () => {
     
     return (
     <div id="wrapper">
+
+       <div className="instagram-button-container">
+        <a href={instagramState} target="_blank" rel="noopener noreferrer">
+          <button>Ver en Instagram</button>
+        </a>
+      </div>
 
       <div className="playlist-video">
         <div 
