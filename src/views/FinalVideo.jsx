@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import sub from "./media/subtitles/sintel-en.vtt";
 
+
 import './js/new'
 import './js/share_manager'
 import './css/perfect-scrollbar.css';
