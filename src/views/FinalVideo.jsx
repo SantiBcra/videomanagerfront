@@ -80,11 +80,7 @@ const VideoPlayer = () => {
       </a>
     </div>
 
-    <div className="instagram-button-container">
-      <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
-        <button>Verisart</button>
-      </a>
-    </div>
+  
 
     <div id="wrapper">
 
@@ -108,6 +104,12 @@ const VideoPlayer = () => {
           </div>
         </div>
       </div>
+    </div>
+
+          <div className="instagram-button-container">
+      <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
+        <button>Verisart</button>
+      </a>
     </div>
 
    
