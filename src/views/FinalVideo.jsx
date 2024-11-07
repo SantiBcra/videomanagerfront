@@ -73,12 +73,8 @@ const VideoPlayer = () => {
 
     
     return (
-      <>
-      <div className="instagram-button-container">
-      <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
-        <button>Ver en Instagram</button>
-      </a>
-    </div>
+  
+     
 
   
 
@@ -87,6 +83,11 @@ const VideoPlayer = () => {
      
 
       <div className="playlist-video">
+         <div className="instagram-button-container">
+      <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
+        <button>Ver en Instagram</button>
+      </a>
+    </div>
         <div 
           className="mvp-playlist-item" 
           data-type="gdrive_folder" 
@@ -104,16 +105,17 @@ const VideoPlayer = () => {
           </div>
         </div>
       </div>
-    </div>
-
-          <div className="instagram-button-container">
+         <div className="instagram-button-container">
       <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
         <button>Verisart</button>
       </a>
     </div>
 
+       
+    </div>
+
    
-    </>
+  
   );
 };
 
