@@ -18,7 +18,7 @@ function App() {
       {showNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/video/:id" element={<VideoPlayer />} />
+        <Route path="/video/:id/:nombre" element={<VideoPlayer />} />
         <Route path="/video" element={<VideoNull />} />
         <Route path="/" element={<Home />} />
         <Route path="/add-video" element={<FormVideo />} />
