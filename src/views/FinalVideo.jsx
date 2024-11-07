@@ -45,13 +45,13 @@ const VideoPlayer = () => {
           playlistBottomHeight: 0,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
-          playerRatio: 1.7,
-          aspectRatio: 1, // Relación 9:16
+         playerRatio: 0.45,
+          aspectRatio: 2, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
           autoPlay: true,
           randomPlay: false,
-          showControlsBeforeStart: false,
+          showControlsBeforeStart: true,
           elementsVisibilityArr: [
             { width: 6000, elements: ['play', 'fullscreen', 'settings', 'cc', 'volume'] }
             
