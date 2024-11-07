@@ -26,7 +26,7 @@ const VideoPlayer = () => {
 
         const videoData = data.message; // Accedemos correctamente a message
         const ready = await setInstagramSate(videoData.instagram);
-        const ready = await setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
+        const ready2 = await setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
 
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
