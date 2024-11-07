@@ -8,9 +8,9 @@ import './css/perfect-scrollbar.css';
 import './css/mvp.css';
 
 const VideoPlayer = () => {
-  const { id } = useParams();
+  const { id, nombre } = useParams();
   const [videoPath, setVideoPath] = useState('');
-
+  const [instagram, setInstagram] = useState('');
   useEffect(() => {
     const fetchVideoData = async () => {
       try {
@@ -27,7 +27,7 @@ const VideoPlayer = () => {
         console.log(data.message.drivelink)
 
         const ready = await setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
-
+        const ready2 = await setInstagram(videoData.instagram); // Actualiza el estado con el valor de videoPath
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
@@ -45,8 +45,8 @@ const VideoPlayer = () => {
           playlistBottomHeight: 300,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
-          playerRatio: 0.45,
-          aspectRatio: 2, // Relación 9:16
+          playerRatio: 1.7,
+          aspectRatio: 1, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
           autoPlay: true,
@@ -73,7 +73,23 @@ const VideoPlayer = () => {
 
     
     return (
+      <>
+      <div className="instagram-button-container">
+      <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
+        <button>Ver en Instagram</button>
+      </a>
+    </div>
+
+    <div className="instagram-button-container">
+      <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
+        <button>Verisart</button>
+      </a>
+    </div>
+
     <div id="wrapper">
+
+     
+
       <div className="playlist-video">
         <div 
           className="mvp-playlist-item" 
@@ -93,6 +109,9 @@ const VideoPlayer = () => {
         </div>
       </div>
     </div>
+
+   
+    </>
   );
 };
 
