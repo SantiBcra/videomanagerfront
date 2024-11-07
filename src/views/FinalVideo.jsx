@@ -75,11 +75,11 @@ const VideoPlayer = () => {
     return (
     <div id="wrapper">
 
-       <div className="instagram-button-container">
+{/*        <div className="instagram-button-container">
         <a href={instagramState} target="_blank" rel="noopener noreferrer">
           <button>Ver en Instagram</button>
         </a>
-      </div>
+      </div> */}
 
       <div className="playlist-video">
         <div 
