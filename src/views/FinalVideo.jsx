@@ -76,44 +76,22 @@ const VideoPlayer = () => {
     return (
   
      <>
-  <div className="playlist-video">
-    
-<div class="mvp-annotation-section">  
 
-
- <div class="mvp-popup" data-show="pause">
-
-                    <img class="mvp-popup-img" src={ig} alt=""/>
-  
-</div> 
-     <div id="an1" class="mvp-annotation" data-show="3" data-hide="6">
+       <div id="an1" class="mvp-annotation" data-show="3" data-hide="6">
           <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
         <img src={ig} alt="Ver en Instagram" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
       </a>
       <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
         <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
       </a>
-        </div> 
-  </div>
+        </div>  
 
 
-<div class="mvp-popup" data-show="10">
-
-    <img class="mvp-popup-img" src="media/annotation/big.jpg" alt=""/>
-
-    <button type="button" class="mvp-popup-close mvp-btn-reset" title="Close">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></svg>
-    </button>
-
-</div>
+       
+  <div className="playlist-video">
     
-  
-
     <div id="wrapper">
 
-     
-
-    
         <div 
           className="mvp-playlist-item" 
           data-type="gdrive_folder" 
