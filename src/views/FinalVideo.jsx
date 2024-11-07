@@ -101,7 +101,7 @@ const VideoPlayer = () => {
 
 
 
-
+<button type="button" class="mvp-unmute-toggle mvp-btn-reset" aria-label="Unmute"></button>
 
 
 
