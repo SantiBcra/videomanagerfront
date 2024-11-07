@@ -114,14 +114,22 @@ const VideoPlayer = () => {
             
         </div> 
 
-        <div id="an1" class="mvp-annotation" data-show="3" data-hide="6">
+        {/* <div id="an2" class="mvp-annotation" data-show="3" data-hide="6">
           <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
         <img src={ig} alt="Ver en Instagram" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
       </a>
       <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
         <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
       </a>
-        </div>  
+        </div>   */}
+
+        <div class="mvp-popup" data-show="pause">
+
+        <img class="mvp-popup-img" src={ig} alt=""/>
+
+      
+
+        </div> 
 
 
 </div>
