@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import sub from "./media/subtitles/sintel-en.vtt";
-
+import ig from "../../public/ig.png"
+import ver from "../../public/ver.jpg"
 import './js/new'
 import './js/share_manager'
 import './css/perfect-scrollbar.css';
@@ -78,10 +79,10 @@ const VideoPlayer = () => {
   <div className="playlist-video">
          <div className="instagram-button-container">
       <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
-        <button>Ver en Instagram</button>
+        <img src={ig} alt="Ver en Instagram" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
       </a>
       <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
-        <button>Verisart</button>
+        <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
       </a>
     </div>
   
