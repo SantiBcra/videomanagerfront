@@ -41,8 +41,8 @@ const VideoPlayer = () => {
           // playlistScrollType: 'perfect-scrollbar',
           playlistOpened: false,
           showControlsBeforeStart: false,
-          verticalBottomSepearator: 768,
-          playlistBottomHeight: 300,
+          verticalBottomSepearator: 0,
+          playlistBottomHeight: 0,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
           playerRatio: 1.7,
@@ -74,20 +74,20 @@ const VideoPlayer = () => {
     
     return (
   
-     
-
+     <>
+  <div className="playlist-video">
+         <div className="instagram-button-container">
+      <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
+        <button>Ver en Instagram</button>
+      </a>
+    </div>
   
 
     <div id="wrapper">
 
      
 
-      <div className="playlist-video">
-         <div className="instagram-button-container">
-      <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
-        <button>Ver en Instagram</button>
-      </a>
-    </div>
+    
         <div 
           className="mvp-playlist-item" 
           data-type="gdrive_folder" 
@@ -105,16 +105,18 @@ const VideoPlayer = () => {
           </div>
         </div>
       </div>
-         <div className="instagram-button-container">
+        
+
+       
+    </div>
+
+    <div className="instagram-button-container">
       <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
         <button>Verisart</button>
       </a>
     </div>
 
-       
-    </div>
-
-   
+      </>
   
   );
 };
