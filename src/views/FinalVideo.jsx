@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import sub from "./media/subtitles/sintel-en.vtt";
+import subdos from "./media/subtitles/sintel-es.vtt";
 import ig from "../../public/ig.png"
 import ver from "../../public/ver.jpg"
 import './js/new'
@@ -107,18 +108,14 @@ const VideoPlayer = () => {
           data-title="Video title goes here" 
           data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
         >
-        </div>
 
 
-
-
-
-
-          
           <div className="mvp-subtitles">
             <div data-label="English" data-src={sub} data-default></div>
-            <div data-label="Spanish" data-src="/subtitles/sintel-es.vtt"></div>
+            <div data-label="Spanish" data-src={subdos}></div>
           </div>
+        </div>
+
 
 
         </div>
