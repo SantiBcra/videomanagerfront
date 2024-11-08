@@ -103,7 +103,7 @@ const VideoPlayer = () => {
     
     <div id="wrapper">
 
-
+<div> <h2>Video is loading, please wait</h2></div>
         <div 
           className="mvp-playlist-item" 
           data-type="gdrive_folder" 
