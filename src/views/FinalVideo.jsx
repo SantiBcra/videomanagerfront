@@ -33,6 +33,7 @@ const VideoPlayer = () => {
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
           useMobileNativePlayer: false,
+          skin: "pollux",
           mobileSeekbarMinWidth: 500,
           embedSrc: "0",
           openFsOnPlay: false,
@@ -46,8 +47,8 @@ const VideoPlayer = () => {
           playlistBottomHeight: 0,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
-         playerRatio: 1,
-          aspectRatio: 1, // Relación 9:16
+         playerRatio: 0.7,
+          aspectRatio: 2, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
           autoPlay: false,
