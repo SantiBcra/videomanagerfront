@@ -89,7 +89,7 @@ const VideoPlayer = () => {
           className="mvp-playlist-item" 
           data-type="gdrive_folder" 
           data-path={videoPath} // Asigna videoPath aquí
-          data-poster="media/videos/esp.png" 
+          data-poster="media/videos/play.png" 
           data-download="media/video/01.mp4" 
           data-share="http://www.google.com" 
           data-thumb="media/video/thumb/01.jpg" 
@@ -108,13 +108,7 @@ const VideoPlayer = () => {
 
 
 <div class="mvp-annotation-section">
-        
-        <div id="an1" class="mvp-annotation" data-show data-hide>
-            <span>This is a popup text visible through the whole video. Lorem ipsum dolor sit amet. Link <a href="http://www.google.com" target="_blank">here</a></span>
-            
-        </div> 
 
-           
 
         <div class="mvp-popup" data-show="5">
 
