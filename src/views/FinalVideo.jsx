@@ -91,24 +91,13 @@ const VideoPlayer = () => {
             <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
           </a>
       </div> 
-
-    <div class="mvp-annotation-section">
-        
-        <div id="an1" class="mvp-annotation" data-show="20" data-hide="60">
-                <a href="http://www.google.com" target="_blank"><span>This popup is a link and cannot be closed.</span></a>
-         </div>
-    </div>
-
-    <button type="button" class="mvp-unmute-toggle mvp-btn-reset" aria-label="Unmute"></button>
-    
     <div id="wrapper">
 
 <div> <h2>Video is loading, please wait</h2></div>
         <div 
           className="mvp-playlist-item" 
           data-type="gdrive_folder" 
-          data-path={videoPath} // Asigna videoPath aquí
-          data-poster="media/videos/poster/esp.png" 
+          data-path={videoPath} // Asigna videoPath aquí 
           data-download="media/video/01.mp4" 
           data-share="http://www.google.com" 
           data-thumb="media/video/thumb/01.jpg" 
