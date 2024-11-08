@@ -83,18 +83,7 @@ const VideoPlayer = () => {
        
   <div className="playlist-video">
 
-    <div class="mvp-annotation-section">
-  
- <div id="an1" class="mvp-annotation" data-show="20" data-hide="60">
-        <a href="http://www.google.com" target="_blank"><span>This popup is a link and cannot be closed.</span></a>
-    </div>
-
-
-    <button type="button" class="mvp-unmute-toggle mvp-btn-reset" aria-label="Unmute"></button>
-    
-    <div id="wrapper">
-
-       <div>
+<div>
               <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
             <img src={ig} alt="Ver en Instagram" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
           </a>
@@ -102,6 +91,18 @@ const VideoPlayer = () => {
             <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
           </a>
       </div> 
+
+    <div class="mvp-annotation-section">
+        
+        <div id="an1" class="mvp-annotation" data-show="20" data-hide="60">
+                <a href="http://www.google.com" target="_blank"><span>This popup is a link and cannot be closed.</span></a>
+         </div>
+    </div>
+
+    <button type="button" class="mvp-unmute-toggle mvp-btn-reset" aria-label="Unmute"></button>
+    
+    <div id="wrapper">
+
 
         <div 
           className="mvp-playlist-item" 
@@ -114,22 +115,7 @@ const VideoPlayer = () => {
           data-title="Video title goes here" 
           data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
         >
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
-
-</div>
+        </div>
 
 
 
@@ -144,7 +130,7 @@ const VideoPlayer = () => {
 
 
         </div>
-      </div>
+     
         
 
        
