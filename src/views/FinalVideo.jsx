@@ -32,6 +32,7 @@ const VideoPlayer = () => {
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
+          preload: 'auto'
           useMobileNativePlayer: false,
           skin: "pollux",
           mobileSeekbarMinWidth: 500,
