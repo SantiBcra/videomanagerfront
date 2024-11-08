@@ -58,7 +58,7 @@ const VideoPlayer = () => {
           randomPlay: false,
           showControlsBeforeStart: true,
           elementsVisibilityArr: [
-            { width: 6000, elements: ['play', 'fullscreen', 'settings', 'cc', 'volume'] }
+            { width: 6000, elements: ['play', 'fullscreen', 'settings', 'volume'] }
             
           ],
         };
