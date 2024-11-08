@@ -87,9 +87,7 @@ const VideoPlayer = () => {
               <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
             <img src={ig} alt="Ver en Instagram" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
           </a>
-          <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
-            <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
-          </a>
+         
       </div> 
     <div id="wrapper">
 
@@ -121,7 +119,12 @@ const VideoPlayer = () => {
         </div>
      
         
-
+<div>
+            
+          <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
+            <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
+          </a>
+      </div> 
        
     </div>
 
