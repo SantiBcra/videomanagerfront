@@ -34,7 +34,7 @@ const VideoPlayer = () => {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
           preload: 'auto',
           useMobileNativePlayer: false,
-          skin: "pollux",
+          skin: "sirius",
           mobileSeekbarMinWidth: 500,
           embedSrc: "0",
           openFsOnPlay: false,
