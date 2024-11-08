@@ -356,7 +356,11 @@ button.mvp-menu-item{
 /* subtitles */
 
 .mvp-subtitles {
-    display: block; /* Cambiado a block para mostrar los subtítulos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .mvp-subtitle-holder-inner {
@@ -369,15 +373,15 @@ button.mvp-menu-item{
 }
 
 .mvp-subtitle {
-    display: inline-block;
+       display: inline-block;
     padding: 5px;
     box-sizing: border-box;
     line-height: normal !important;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff !important;
-    background: rgba(0, 0, 0, 0) !important;
+    color: #c9880f !important;
+    background: rgba(0, 0, 0, 0.782) !important;
     white-space: pre-wrap;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 
