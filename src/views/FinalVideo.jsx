@@ -37,7 +37,7 @@ const VideoPlayer = () => {
           skin: "pollux",
           mobileSeekbarMinWidth: 500,
           embedSrc: "0",
-          openFsOnPlay: false,
+          openFsOnPlay: true,
           mediaEndAction: 'rewind',
           playlistPosition: 'vb',
           combinePlayerRatio: false,
