@@ -356,11 +356,7 @@ button.mvp-menu-item{
 /* subtitles */
 
 .mvp-subtitles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    display: block
 }
 
 .mvp-subtitle-holder-inner {
