@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import sub from "./media/subtitles/sintel-en.vtt";
 import subdos from "./media/subtitles/sintel-es.vtt";
+import subtres from "./media/subtitles/sintel-pr.vtt";
 import ig from "../../public/ig.png"
 import ver from "../../public/ver.jpg"
 import './js/new'
@@ -49,7 +50,7 @@ const VideoPlayer = () => {
           playlistBottomHeight: 0,
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
-         playerRatio: 0.65,
+         playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
           volume: 0.5,
@@ -86,14 +87,14 @@ const VideoPlayer = () => {
        
   <div className="playlist-video">
 
-<div style={{ display: "flex", justifyContent: "center"}}>
+{/* <div style={{ display: "flex", justifyContent: "center"}}>
           <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
                 <img src={ig} alt="Ver en Instagram" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
           </a>
            <a href={`https://verisart.com/works/${nombre}`} target="_blank" rel="noopener noreferrer">
                 <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
            </a>
-</div> 
+</div>  */}
     
     <div id="wrapper">
 
@@ -113,6 +114,7 @@ const VideoPlayer = () => {
           <div className="mvp-subtitles">
             <div data-label="English" data-src={sub} data-default></div>
             <div data-label="Spanish" data-src={subdos}></div>
+            <div data-label="Spanish" data-src={subtres}></div>
           </div>
         </div>
 
