@@ -114,7 +114,7 @@ const VideoPlayer = () => {
           <div className="mvp-subtitles">
             <div data-label="English" data-src={sub} data-default></div>
             <div data-label="Spanish" data-src={subdos}></div>
-            <div data-label="Spanish" data-src={subtres}></div>
+            <div data-label="Portuguese" data-src={subtres}></div>
           </div>
         </div>
 
