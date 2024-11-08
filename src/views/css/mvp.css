@@ -356,7 +356,7 @@ button.mvp-menu-item{
 /* subtitles */
 
 .mvp-subtitles {
-    display: block
+    display: block;
 }
 
 .mvp-subtitle-holder-inner {
