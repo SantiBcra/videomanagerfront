@@ -58,6 +58,19 @@ const VideoPlayer = () => {
           autoPlay: false,
           randomPlay: false,
           showControlsBeforeStart: true,
+          buttonsTop:[
+    {
+        full: '<a href="https://google.com" target="_blank" data-tooltip="I am a custom button" class="mvp-contr-btn mvp-btn-reset my-custom-button"><svg viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></svg></a>',
+    },
+    {
+        icon:'<svg viewBox="0 0 512 512"><path d="M192 0c-17.7 0-32 14.3-32 32V64c0 .1 0 .1 0 .2c-38.6 2.2-72.3 27.3-85.2 64.1L39.6 228.8C16.4 238.4 0 261.3 0 288V432v48c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V432H416v48c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V432 288c0-26.7-16.4-49.6-39.6-59.2L437.2 128.3c-12.9-36.8-46.6-62-85.2-64.1c0-.1 0-.1 0-.2V32c0-17.7-14.3-32-32-32H192zM165.4 128H346.6c13.6 0 25.7 8.6 30.2 21.4L402.9 224H109.1l26.1-74.6c4.5-12.8 16.6-21.4 30.2-21.4zM96 288a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm288 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>',
+        url: "https://google.com",
+        target: "_blank",
+        rel: "nofollow",
+        class: 'my-other-button',
+        tooltip: "Lets go for a ride!"
+    }
+],
           elementsVisibilityArr: [
             { width: 6000, elements: ['play', 'fullscreen', 'settings', 'volume'] }
             
@@ -96,8 +109,7 @@ const VideoPlayer = () => {
                 <img src={ver} alt="Verisart" style={{ width: "50px", height: "50px", borderRadius: "13px" }} />
            </a>
 </div>  */}
-    <a href="https://google.com" target="_blank" data-tooltip="I am a custom button" class="mvp-contr-btn mvp-btn-reset my-custom-button"><svg viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></svg></a>
-
+    
     <div id="wrapper">
 
 
