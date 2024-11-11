@@ -35,6 +35,7 @@ const VideoPlayer = () => {
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
           preload: 'auto',
+          useMobileListMenu: true,
           useMobileNativePlayer: false,
           skin: "aviva",
           mobileSeekbarMinWidth: 500,
