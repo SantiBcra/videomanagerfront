@@ -37,7 +37,7 @@ const VideoPlayer = () => {
           preload: 'auto',
           useMobileListMenu: true,
           useMobileNativePlayer: false,
-          skin: "aviva",
+          // skin: "aviva",
           mobileSeekbarMinWidth: 500,
           embedSrc: "0",
           openFsOnPlay: true,
