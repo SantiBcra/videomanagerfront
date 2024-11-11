@@ -6,11 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
+        
         <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/add-video">Agregar Video</Link>
+          <Link to="/">Agregar Video</Link>
         </li>
         <li>
           <Link to="/view">Dashboard</Link>
