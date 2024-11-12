@@ -1,9 +1,13 @@
-/* Estilos generales */
 .dashboard {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.video-table {
+  max-height: 400px; /* Define la altura máxima del contenedor */
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
 
 .video-table table {
@@ -20,6 +24,9 @@
 .video-table th {
   background-color: #3ea252b0;
   font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Mantiene la cabecera fija mientras se hace scroll */
 }
 
 .video-table th.red {
@@ -43,6 +50,11 @@
 
 /* Estilos responsive */
 @media (max-width: 768px) {
+  .video-table {
+    max-height: none; /* Remueve el límite de altura en móviles */
+    overflow-y: visible;
+  }
+
   .video-table table, 
   .video-table thead, 
   .video-table tbody, 
