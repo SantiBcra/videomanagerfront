@@ -2,34 +2,31 @@
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  max-height: 450px; /* Establece una altura máxima para activar el scroll */
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
   background-color: #2e2c2c;
- 
+  overflow-y: auto; /* Permite el desplazamiento vertical */
 }
 
-.video-form label {
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 8px;
+/* Personaliza la barra de desplazamiento */
+.video-form::-webkit-scrollbar {
+  width: 8px;
 }
 
-.video-form input[type="text"] {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #383636;
-  color: #fff;
-  width: 100%;
-  box-sizing: border-box;
-  transition: background-color 0.3s ease-in-out;
+.video-form::-webkit-scrollbar-track {
+  background: #383636;
+  border-radius: 10px;
 }
 
-.video-form input[type="text"]:focus {
-  background-color: #454242;
-  outline: none;
+.video-form::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.video-form::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
 }
 
 .checkbox-group {
