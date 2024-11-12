@@ -132,7 +132,7 @@ function Dashboard() {
           <table>
             <thead>
               <tr>
-                <th className="red">ID</th>
+                <th className="red">LINK</th>
                 <th>Instagram</th>
                 <th>Verisart</th>
                 <th>Google Drive Link</th>
