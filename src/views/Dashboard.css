@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 10px;
 }
 
 .video-table {
@@ -63,7 +63,7 @@
   .video-table td, 
   .video-table tr {
     display: block;
-    width: 100%;
+    width: 90%;
   }
 
   /* Ocultar cabeceras en móviles */
