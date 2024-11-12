@@ -143,15 +143,15 @@ function Dashboard() {
             <tbody>
               {videos.map((video) => (
                 <tr key={video.id}>
-                  <td data-label="ID">
+                  <td data-label="LINK">
                     <a href={`https://videomanagerfront-kavk.vercel.app/video/${video.id}/${video.verisart}`} target="_blank" rel="noopener noreferrer">
                       {video.id}
                     </a>
                   </td>
                   <td data-label="Instagram">{video.instagram}</td>
-                  <td data-label="Verisart">{video.verisart}</td>
-                  <td data-label="Google Drive Link">{video.drivelink}</td>
-                  <td data-label="Subtítulos">
+                  <td data-label="Verisart ID">{video.verisart}</td>
+                  <td data-label="Google Drive Folder ID">{video.drivelink}</td>
+                  <td data-label="Subtitles">
                     <ul>
                       {video.languages?.english && <li>English</li>}
                       {video.languages?.spanish && <li>Español</li>}
