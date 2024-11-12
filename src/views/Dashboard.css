@@ -63,7 +63,7 @@
   .video-table td, 
   .video-table tr {
     display: block;
-    width: 100%;
+    width: 95%;
   }
 
   /* Ocultar cabeceras en móviles */
