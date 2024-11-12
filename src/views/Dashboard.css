@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px;
 }
 
 .video-table {
@@ -51,9 +51,9 @@
 /* Estilos responsive */
 @media (max-width: 768px) {
   .video-table {
-    max-height: 400px; /* Ajusta esta altura según necesites */
+    max-height: 550px; /* Ajusta esta altura según necesites */
     overflow-y: auto; /* Activa la barra de desplazamiento vertical */
-    padding-right: 10px; /* Espacio para evitar que la scrollbar cubra el contenido */
+    padding-right: 0px; /* Espacio para evitar que la scrollbar cubra el contenido */
   }
 
   .video-table table, 
