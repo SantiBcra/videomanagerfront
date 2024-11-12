@@ -14,10 +14,7 @@ const Navbar = () => {
           <Link to="/view">Dashboard</Link>
         </li>
 
-        <li>
-          {/* Enlace dinámico hacia un video específico */}
-          <Link to={`/video/`}>Ver Video</Link>
-        </li>
+       
 
         
       </ul>
