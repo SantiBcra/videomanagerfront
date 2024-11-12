@@ -215,6 +215,35 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-update {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.btn-update:hover {
+  background-color: #2980b9;
+}
+
+
+
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
