@@ -49,6 +49,7 @@ const VideoPlayer = () => {
           showControlsBeforeStart: false,
           verticalBottomSepearator: 0,
           playlistBottomHeight: 0,
+          mediaEndAction:'rewind',
           instanceName: "player1",
           activePlaylist: ".playlist-video:first-child",
          playerRatio: 0.5,
