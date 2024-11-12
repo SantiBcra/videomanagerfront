@@ -121,7 +121,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <h1>Dashboard</h1>
+     
       
       {/* Mensaje de carga */}
       {loading && <p>Cargando videos...</p>}
