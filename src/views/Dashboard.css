@@ -6,7 +6,7 @@
 }
 
 .video-table {
-  max-height: 400px; /* Define la altura máxima del contenedor */
+  max-height: 500px; /* Define la altura máxima del contenedor */
   overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
 
