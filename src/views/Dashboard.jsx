@@ -134,10 +134,10 @@ function Dashboard() {
               <tr>
                 <th className="red">LINK</th>
                 <th>Instagram</th>
-                <th>Verisart</th>
-                <th>Google Drive Link</th>
-                <th>Subtítulos</th>
-                <th>Acciones</th> {/* Nueva columna para el botón de eliminar */}
+                <th>Verisart ID</th>
+                <th>Google Drive Folder ID</th>
+                <th>Subtitles</th>
+                <th>Actions</th> {/* Nueva columna para el botón de eliminar */}
               </tr>
             </thead>
             <tbody>
@@ -154,8 +154,8 @@ function Dashboard() {
                   <td data-label="Subtítulos">
                     <ul>
                       {video.languages?.english && <li>English</li>}
-                      {video.languages?.spanish && <li>Spanish</li>}
-                      {video.languages?.chinese && <li>Chinese</li>}
+                      {video.languages?.spanish && <li>Español</li>}
+                      {video.languages?.chinese && <li>中文</li>}
                     </ul>
                   </td>
                   <td data-label="Acciones">
