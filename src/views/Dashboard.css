@@ -51,8 +51,9 @@
 /* Estilos responsive */
 @media (max-width: 768px) {
   .video-table {
-    max-height: none; /* Remueve el límite de altura en móviles */
-    overflow-y: visible;
+    max-height: 400px; /* Ajusta esta altura según necesites */
+    overflow-y: auto; /* Activa la barra de desplazamiento vertical */
+    padding-right: 10px; /* Espacio para evitar que la scrollbar cubra el contenido */
   }
 
   .video-table table, 
@@ -110,5 +111,19 @@
   /* Elimina el borde inferior en la última celda */
   .video-table td:last-child {
     border-bottom: none;
+  }
+
+  /* Opcional: estilos para una barra de desplazamiento más moderna */
+  .video-table::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .video-table::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra */
+    border-radius: 4px;
+  }
+
+  .video-table::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color al pasar el cursor */
   }
 }
