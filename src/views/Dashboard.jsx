@@ -144,7 +144,7 @@ function Dashboard() {
               {videos.map((video) => (
                 <tr key={video.id}>
                   <td data-label="ID">
-                    <a href={`https://videomanagerfront-3nx6.vercel.app/video/${video.id}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://videomanagerfront-kavk.vercel.app/video/${video.id}/${video.verisart}`} target="_blank" rel="noopener noreferrer">
                       {video.id}
                     </a>
                   </td>
