@@ -101,7 +101,7 @@ const VideoPlayer = () => {
         <div id="wrapper">
         <div class="mvp-playlist-list">
             <div class="playlist-video1">
-                 <div class="mvp-playlist-item" data-type="audio" data-path="https://www.googleapis.com/drive/v3/files/13lMcm3z1S0LnZKxBRZxRJtCYl73B51mT?alt=media&key=AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk">
+                 <div class="mvp-playlist-item" data-type="video" data-path="https://www.googleapis.com/drive/v3/files/13lMcm3z1S0LnZKxBRZxRJtCYl73B51mT?alt=media&key=AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk">
                       <div className="mvp-subtitles">
                             <div data-label="English" data-src={sub} data-default></div>
                             <div data-label="Spanish" data-src={subdos}></div>
