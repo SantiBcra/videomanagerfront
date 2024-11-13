@@ -101,16 +101,7 @@ const VideoPlayer = () => {
         <div id="wrapper">
         <div class="mvp-playlist-list">
             <div class="playlist-video1">
-                <div 
-                        class="mvp-playlist-item"
-                        data-type="gdrive_folder" 
-                        data-path={videoPath} // Asigna videoPath aquí 
-                        data-download="media/video/01.mp4" 
-                        data-share="http://www.google.com" 
-                        data-thumb="media/video/thumb/01.jpg" 
-                        data-title="Video title goes here" 
-                        data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
-                        >
+                 <div class="mvp-playlist-item" data-type="audio" data-path="https://www.googleapis.com/drive/v3/files/13lMcm3z1S0LnZKxBRZxRJtCYl73B51mT?alt=media&key=AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk">
                       <div className="mvp-subtitles">
                             <div data-label="English" data-src={sub} data-default></div>
                             <div data-label="Spanish" data-src={subdos}></div>
