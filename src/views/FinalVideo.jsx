@@ -35,6 +35,7 @@ const VideoPlayer = () => {
           useMobileNativePlayer: false,
           mobileSeekbarMinWidth: 500,
           openFsOnPlay: true,
+          embedSrc: "0",
           mediaEndAction: 'rewind',
           playlistPosition: 'vb',
           combinePlayerRatio: false,
@@ -45,7 +46,6 @@ const VideoPlayer = () => {
           playlistBottomHeight: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
-          activePlaylist: ".playlist-video:first-child",
          playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
