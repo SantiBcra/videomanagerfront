@@ -83,7 +83,7 @@ const VideoPlayer = () => {
         };
 
         // Inicia el reproductor con los settings configurados
-        new mvp(document.getElementById('wrapper').children[0], settings);
+        player = new mvp(document.getElementById('wrapper'), settings);
 
 
       } catch (error) {
