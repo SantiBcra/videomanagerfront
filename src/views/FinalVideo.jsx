@@ -36,7 +36,7 @@ const VideoPlayer = () => {
           activePlaylist:".playlist-video1",
           preload: 'auto',
           useMobileNativePlayer: false,
-          skin: "sirius",
+          skin: "pollux",
           useBlob:true,
           mobileSeekbarMinWidth: 500,
           embedSrc: "0",
