@@ -76,7 +76,7 @@ function Dashboard() {
           <label>Subtítulos:</label>
           <label><input type="checkbox" name="english" ${video.languages.english ? "checked" : ""} /> English</label>
           <label><input type="checkbox" name="spanish" ${video.languages.spanish ? "checked" : ""} /> Español</label>
-          <label><input type="checkbox" name="chinese" ${video.languages.chinese ? "checked" : ""} /> Chinese</label>
+          <label><input type="checkbox" name="chinese" ${video.languages.chinese ? "checked" : ""} /> 中文</label>
 
           <label for="drivelink">ID de Google Drive:</label>
           <input type="text" id="drivelink" name="drivelink" value="${video.drivelink}" />
