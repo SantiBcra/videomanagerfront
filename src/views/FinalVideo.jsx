@@ -32,6 +32,8 @@ const VideoPlayer = () => {
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
+          playlistList: "#mvp-playlist-list",
+          activePlaylist:".playlist-video1",
           preload: 'auto',
           useMobileNativePlayer: false,
           // skin: "aviva",
@@ -49,7 +51,6 @@ const VideoPlayer = () => {
           playlistBottomHeight: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
-          activePlaylist: ".playlist-video:first-child", // Primer reproductor
          playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
@@ -97,48 +98,31 @@ const VideoPlayer = () => {
     
     return (
   
-  
+        <div id="wrapper">
+        <div class="mvp-playlist-list">
+            <div class="playlist-video1">
+                <div 
+                        class="mvp-playlist-item"
+                        data-type="gdrive_folder" 
+                        data-path={videoPath} // Asigna videoPath aquí 
+                        data-download="media/video/01.mp4" 
+                        data-share="http://www.google.com" 
+                        data-thumb="media/video/thumb/01.jpg" 
+                        data-title="Video title goes here" 
+                        data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
+                        >
+                </div>
+            
 
-      
-
-
-       
-
-    <div id="wrapper">
- <div class="playlist-video">
-
-        <div 
-         lass="mvp-playlist-item"
-          data-type="gdrive_folder" 
-          data-path={videoPath} // Asigna videoPath aquí 
-          data-download="media/video/01.mp4" 
-          data-share="http://www.google.com" 
-          data-thumb="media/video/thumb/01.jpg" 
-          data-title="Video title goes here" 
-          data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
-        >
-
-          
-
-          <div className="mvp-subtitles">
-            <div data-label="English" data-src={sub} data-default></div>
-            <div data-label="Spanish" data-src={subdos}></div>
-            <div data-label="Portuguese" data-src={subtres}></div>
-          </div>
+                <div className="mvp-subtitles">
+                    <div data-label="English" data-src={sub} data-default></div>
+                    <div data-label="Spanish" data-src={subdos}></div>
+                    <div data-label="Portuguese" data-src={subtres}></div>
+                </div>
+            </div>
         </div>
-
-
-
-        </div>
-     
-
      </div>  
-    
-
- 
-
-      
-  
+     
   );
 };
 
