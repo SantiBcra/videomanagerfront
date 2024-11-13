@@ -41,6 +41,7 @@ const VideoPlayer = () => {
           verticalBottomSepearator: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
+         activePlaylist: ,
          playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
@@ -91,7 +92,7 @@ const VideoPlayer = () => {
   
 
       
-
+<div className="playlist-video">
 
        
 
@@ -100,7 +101,7 @@ const VideoPlayer = () => {
 
 
         <div 
-        
+          className="mvp-playlist-item" 
           data-type="gdrive_folder" 
           data-path={videoPath} // Asigna videoPath aquí 
           data-download="media/video/01.mp4" 
@@ -125,7 +126,7 @@ const VideoPlayer = () => {
      
 
        
-   
+      </div>
 
  
 
