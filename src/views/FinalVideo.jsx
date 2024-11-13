@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import sub from "./media/subtitles/sintel-en.vtt";
 import subdos from "./media/subtitles/sintel-es.vtt";
 import subtres from "./media/subtitles/sintel-pr.vtt";
+import './js/new';
+import './js/share_manager';
 import './css/perfect-scrollbar.css';
 import './css/mvp.css';
 
