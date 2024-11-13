@@ -3,10 +3,6 @@ import { useParams } from 'react-router-dom';
 import sub from "./media/subtitles/sintel-en.vtt";
 import subdos from "./media/subtitles/sintel-es.vtt";
 import subtres from "./media/subtitles/sintel-pr.vtt";
-import ig from "../../public/ig.png"
-import ver from "../../public/ver.jpg"
-import './js/new'
-import './js/share_manager'
 import './css/perfect-scrollbar.css';
 import './css/mvp.css';
 
@@ -34,12 +30,8 @@ const VideoPlayer = () => {
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
           gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
-          preload: 'auto',
           useMobileNativePlayer: false,
-          // skin: "aviva",
-          useBlob:true,
           mobileSeekbarMinWidth: 500,
-          embedSrc: "0",
           openFsOnPlay: true,
           mediaEndAction: 'rewind',
           playlistPosition: 'vb',
@@ -51,7 +43,7 @@ const VideoPlayer = () => {
           playlistBottomHeight: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
-          activePlaylist: ".playlist-video:first-child",
+          
          playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
