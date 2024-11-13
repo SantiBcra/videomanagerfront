@@ -41,7 +41,7 @@ const VideoPlayer = () => {
           verticalBottomSepearator: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
-         activePlaylist: ,
+         activePlaylist: "",
          playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
