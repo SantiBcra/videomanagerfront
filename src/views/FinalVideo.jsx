@@ -111,13 +111,11 @@ const VideoPlayer = () => {
                         data-title="Video title goes here" 
                         data-description="Self hosted video. Commodo vitae, tempor eu, urna eu mi hendrerit. Maecenas eu erat condimentum."
                         >
-                </div>
-            
-
-                <div className="mvp-subtitles">
-                    <div data-label="English" data-src={sub} data-default></div>
-                    <div data-label="Spanish" data-src={subdos}></div>
-                    <div data-label="Portuguese" data-src={subtres}></div>
+                      <div className="mvp-subtitles">
+                            <div data-label="English" data-src={sub} data-default></div>
+                            <div data-label="Spanish" data-src={subdos}></div>
+                            <div data-label="Portuguese" data-src={subtres}></div>
+                       </div>
                 </div>
             </div>
         </div>
