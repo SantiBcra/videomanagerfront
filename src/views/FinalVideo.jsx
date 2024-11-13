@@ -37,13 +37,8 @@ const VideoPlayer = () => {
           openFsOnPlay: true,
           embedSrc: "0",
           mediaEndAction: 'rewind',
-          playlistPosition: 'vb',
-          combinePlayerRatio: false,
-          playlistScrollType: 'perfect-scrollbar',
-          playlistOpened: false,
           showControlsBeforeStart: false,
           verticalBottomSepearator: 0,
-          playlistBottomHeight: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
          playerRatio: 0.5,
@@ -105,7 +100,7 @@ const VideoPlayer = () => {
 
 
         <div 
-          className="mvp-playlist-item" 
+        
           data-type="gdrive_folder" 
           data-path={videoPath} // Asigna videoPath aquí 
           data-download="media/video/01.mp4" 
