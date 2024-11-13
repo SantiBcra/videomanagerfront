@@ -136,7 +136,7 @@ const FormVideo = () => {
             checked={formData.languages.chinese}
             onChange={handleChange}
           />
-          Chinese
+          中文
         </label>
       </div>
 
