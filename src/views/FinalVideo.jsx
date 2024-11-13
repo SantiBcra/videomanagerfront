@@ -31,17 +31,25 @@ const VideoPlayer = () => {
         const ready2 = await setInstagram(videoData.instagram); // Actualiza el estado con el valor de videoPath
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
-          gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
+        gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
+          preload: 'auto',
           useMobileNativePlayer: false,
+          // skin: "aviva",
+          useBlob:true,
           mobileSeekbarMinWidth: 500,
-          openFsOnPlay: true,
           embedSrc: "0",
+          openFsOnPlay: true,
           mediaEndAction: 'rewind',
+          playlistPosition: 'vb',
+          combinePlayerRatio: false,
+          playlistScrollType: 'perfect-scrollbar',
+          playlistOpened: false,
           showControlsBeforeStart: false,
           verticalBottomSepearator: 0,
+          playlistBottomHeight: 0,
           mediaEndAction:'rewind',
           instanceName: "player1",
-         activePlaylist: "",
+          activePlaylist: "",
          playerRatio: 0.5,
           aspectRatio: 2, // Relación 9:16
           activeItem: 0,
