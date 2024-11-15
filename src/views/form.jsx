@@ -12,9 +12,6 @@ const FormVideo = () => {
     video: null, // Archivo de video
   });
 
-  const [isUploading, setIsUploading] = useState(false); // Estado para controlar la carga
-  const [uploadMessage, setUploadMessage] = useState(''); // Mensaje de carga
-
   const handleChange = (e) => {
     const { name, type, files } = e.target;
 
@@ -41,19 +38,6 @@ const FormVideo = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!formData.video) {
-      Swal.fire({
-        title: 'Error',
-        text: 'Debe seleccionar un archivo de video.',
-        icon: 'error',
-        confirmButtonText: 'Aceptar',
-      });
-      return;
-    }
-
-    setIsUploading(true); // Establecer estado de carga
-    setUploadMessage('Espere mientras el video se sube...'); // Mensaje de carga
 
     const formDataToSend = new FormData();
 
@@ -94,9 +78,6 @@ const FormVideo = () => {
       }
     } catch (error) {
       console.error('Error en la solicitud:', error);
-    } finally {
-      setIsUploading(false); // Finalizar carga
-      setUploadMessage(''); // Limpiar mensaje de carga
     }
   };
 
@@ -163,8 +144,7 @@ const FormVideo = () => {
         </label>
       </div>
 
-      <button type="submit" disabled={isUploading}>Agregar Video</button>
-      {isUploading && <p>{uploadMessage}</p>} {/* Mostrar mensaje mientras se carga */}
+      <button type="submit">Agregar Video</button>
     </form>
   );
 };
