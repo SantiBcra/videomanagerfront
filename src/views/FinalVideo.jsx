@@ -16,7 +16,7 @@ const VideoPlayer = () => {
     const fetchVideoData = async () => {
       try {
         const response = await fetch(`https://lightgray-lobster-895274.hostingersite.com/public/videos/${id}`);
-
+  console.log(response)
         if (!response.ok) {
           throw new Error("Error al cargar los datos");
         }
