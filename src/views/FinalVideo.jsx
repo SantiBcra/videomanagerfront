@@ -108,8 +108,8 @@ const VideoPlayer = () => {
             <div class="playlist-video1">
                 <div 
                         class="mvp-playlist-item"
-                        data-type="video" 
-                        data-path={videoPath} // Asigna videoPath aquí 
+                        data-type="gdrive_folder" 
+                        data-path="1Is7BIPNtjc3xU1Lcg8cqppNyYeYzx8LG" // Asigna videoPath aquí 
                         data-download="media/video/01.mp4" 
                         data-share="http://www.google.com" 
                         data-thumb="media/video/thumb/01.jpg" 
