@@ -31,7 +31,7 @@ const VideoPlayer = () => {
         const ready2 = await setInstagram(videoData.instagram); // Actualiza el estado con el valor de videoPath
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
-          gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
+          // gDriveAppId: "AIzaSyDMCGHB4N2fix7tvzGLFyRJjUZ2gHlQCrk",
           playlistList: "#mvp-playlist-list",
           activePlaylist:".playlist-video1",
           preload: "auto",
