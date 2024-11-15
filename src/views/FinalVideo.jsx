@@ -27,7 +27,7 @@ const VideoPlayer = () => {
 
         console.log(data.message.drivelink)
 
-        const ready = await setVideoPath(videoData.drivelink); // Actualiza el estado con el valor de videoPath
+        const ready = await setVideoPath(videoData.video); // Actualiza el estado con el valor de videoPath
         const ready2 = await setInstagram(videoData.instagram); // Actualiza el estado con el valor de videoPath
         // Configura las opciones del reproductor usando videoData.videoPath
         const settings = {
@@ -80,16 +80,7 @@ const VideoPlayer = () => {
 }
 
 ],
-// buttonsBottom:[
-//   {
-//     icon: '<svg viewBox="0 0 512 512"><path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208c92.9 0 174.2-58.7 200-141.4 3.6-11.9-5.7-24.6-18.1-24.6H376c-13.3 0-24 10.7-24 24s10.7 24 24 24h58.6C408.1 401.1 338.3 448 256 448 150.1 448 64 361.9 64 256S150.1 64 256 64c72.6 0 136.8 41.3 169.6 102.1L368 192c-15.7 0-23.6 19-12.5 30.1l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c11-11 3.2-30.1-12.5-30.1h-57.5C389.8 100.5 328.1 48 256 48z"/></svg>',
-//     url: "https://google.com",
-//     target: "_blank",
-//     rel: "nofollow",
-//     class: 'my-bottom-button',
-//     tooltip: "Replay"
-// }
-// ],
+
           elementsVisibilityArr: [
             { width: 6000, elements: ['play', 'fullscreen', 'settings', 'volume', 'rewind'] }
             
@@ -117,7 +108,7 @@ const VideoPlayer = () => {
             <div class="playlist-video1">
                 <div 
                         class="mvp-playlist-item"
-                        data-type="gdrive_folder" 
+                        data-type="video" 
                         data-path={videoPath} // Asigna videoPath aquí 
                         data-download="media/video/01.mp4" 
                         data-share="http://www.google.com" 

@@ -10,6 +10,8 @@
   overflow-y: auto; /* Permite el desplazamiento vertical */
 }
 
+
+
 /* Personaliza la barra de desplazamiento */
 .video-form::-webkit-scrollbar {
   width: 8px;

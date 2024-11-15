@@ -16,9 +16,10 @@ function Dashboard() {
       }
       const data = await response.json();
 
+      // Procesar los datos de los videos
       const parsedData = data.message.map(video => ({
         ...video,
-        languages: JSON.parse(video.languages),
+        languages: video.languages ? JSON.parse(video.languages) : { english: false, spanish: false, chinese: false }
       }));
 
       setVideos(parsedData);
@@ -55,7 +56,6 @@ function Dashboard() {
     }
   };
 
-  
   // Función para abrir el modal de actualización
   const handleUpdate = (video) => {
     Swal.fire({
@@ -121,8 +121,6 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-     
-      
       {/* Mensaje de carga */}
       {loading && <p>Cargando videos...</p>}
       
@@ -153,9 +151,8 @@ function Dashboard() {
                   <td data-label="Google Drive Folder ID">{video.drivelink}</td>
                   <td data-label="Subtitles">
                     <ul>
-                      {video.languages?.english && <li>English</li>}
-                      {video.languages?.spanish && <li>Español</li>}
-                      {video.languages?.chinese && <li>中文</li>}
+                      {video.subtitles && <li>English</li>}
+                    
                     </ul>
                   </td>
                   <td data-label="Acciones">
