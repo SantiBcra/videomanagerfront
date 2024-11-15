@@ -363,7 +363,7 @@ button.mvp-menu-item{
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: 15vh; /* 15% de la altura de la ventana */
+    bottom: 22vh; /* 15% de la altura de la ventana */
     transition: margin-bottom .3s ease-out;
     font-size: 50px;
 }
